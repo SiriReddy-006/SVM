@@ -37,15 +37,6 @@ model = SVC(kernel='linear')
 
 model.fit(X_train, y_train)
 
-# accuracy
-y_pred = model.predict(X_test)
-
-accuracy = accuracy_score(y_test, y_pred)
-
-st.subheader("Model Accuracy")
-
-st.write(accuracy)
-
 # user inputs
 st.subheader("Enter Flower Measurements")
 
